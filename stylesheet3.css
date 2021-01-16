@@ -1,0 +1,209 @@
+*{
+	box-sizing: border-box;
+}
+@font-face{
+	font-family: geo;
+	src: url(Fonts/Geomanist-Regular.otf);
+}
+@font-face{
+	font-family: ran;
+	src: url(Fonts/RanilleNormalRegular-EaZJj.ttf);
+}
+html{
+	scroll-behavior: smooth;
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration: none;
+}
+body{
+	margin:0px; 
+	padding:0px;
+	font-family: geo;
+	background-image: url("IMAGES/homepage2.png");
+	background-size: cover;
+	background-position: top left;
+
+}
+.home{
+	width: 100%;
+	height: 100vh;
+	
+
+}
+.logo img{
+	height: 50px;
+	
+	
+}
+/* Navigation */ 
+nav {
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 10px 30px;
+	background-color: #FFFAF2;
+	box-shadow: 2px 2px 40px rgba(90,118,253,0.13);
+	z-index: 1;
+	width:100%;
+}
+nav ul{
+	display: flex;
+	margin:0px;
+	padding: 0px;
+	
+}
+nav ul li a{
+	height: 40px;
+	line-height: 43px;
+	margin: 8px;
+	padding: 0px 22px;
+	display: flex;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #365FB7;
+	letter-spacing: 1px;
+	
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #F22929;
+}
+
+nav.stroke ul li a {
+	position: relative;
+}
+
+nav.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #F22929;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+.inform{
+	font-family: ran;
+	font-size: 50px;
+	text-align: center;
+	color: #F22929;;
+}
+
+.contact-body{
+	width: 80%;
+	margin: 90px auto;
+	
+}
+.contact-box{
+	background: #fff;
+	display: flex;
+	border-radius: 50px;
+}
+
+.contact-left{
+	flex-basis: 60%;
+	padding: 40px 60px;
+}
+
+.contact-right{
+	flex-basis: 90%;
+	padding: 40px;
+	background: #F2CB05;
+	color: white;
+	border-radius: 50px;
+}
+h3{
+	font-size: 20px;
+}
+.input-row{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+
+}
+
+.input-row .input-group{
+	flex-basis: 45%;
+}
+
+input{
+	width: 100%;
+	border-radius: 10px;
+	outline:none;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-color:#8298D9;
+}
+textarea{
+	width: 100%;
+	height: 150px;
+	border: 1px solid #ccc;
+	outline: none;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	font-family: geo;
+	border-color:#8298D9;
+}
+.submit-btn{
+	position: relative;
+	display: inline-block;
+	padding: 15px 30px;
+	margin-top: 18px;
+	color: #F2EFEB;
+	text-decoration:none;
+	font-size: 15px;
+	letter-spacing: 2px;
+	border-radius: 20px;
+	font-family: geo;
+	outline: none;
+	overflow: hidden;
+	cursor: pointer;
+	background: #F22929;
+}
+
+
+.contact-left{
+	position: relative;
+	padding: 50px 100px; 
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.info{
+	height: 30px;
+	margin-left: 40%;
+}
+.box2{
+	display: flex;
+	margin-right: 100px;
+}
+.icon2 img{
+	float: left;
+	padding: 10px;
+	height: 50px;
+	margin-top: 60px;
+	
+}
+.soc{
+	display: block;
+	font-size: 10px;
+	margin-top: 40px;
+}
